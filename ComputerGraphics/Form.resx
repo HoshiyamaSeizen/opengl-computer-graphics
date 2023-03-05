@@ -67,13 +67,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="openGLPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 15</value>
+    <value>14, 14</value>
   </data>
   <data name="openGLPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 6, 5, 6</value>
   </data>
   <data name="openGLPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>850, 657</value>
+    <value>852, 657</value>
   </data>
   <data name="openGLPanel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -90,12 +90,6 @@
   <data name="&gt;&gt;openGLPanel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="Menu.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Right</value>
-  </data>
-  <data name="Menu.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -103,7 +97,7 @@
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>223, 358</value>
+    <value>221, 457</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>25, 24</value>
@@ -121,13 +115,13 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>Menu</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="translateZRange.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 356</value>
+    <value>246, 455</value>
   </data>
   <data name="translateZRange.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 31</value>
@@ -142,10 +136,10 @@
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;translateZRange.Parent" xml:space="preserve">
-    <value>Menu</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;translateZRange.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -154,7 +148,7 @@
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 358</value>
+    <value>131, 457</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 24</value>
@@ -172,13 +166,13 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>Menu</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="translateYRange.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 356</value>
+    <value>156, 455</value>
   </data>
   <data name="translateYRange.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 31</value>
@@ -193,10 +187,10 @@
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;translateYRange.Parent" xml:space="preserve">
-    <value>Menu</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;translateYRange.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -205,7 +199,7 @@
     <value>NoControl</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 358</value>
+    <value>36, 457</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>25, 24</value>
@@ -223,13 +217,13 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>Menu</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
   <data name="translateXRange.Location" type="System.Drawing.Point, System.Drawing">
-    <value>63, 356</value>
+    <value>61, 455</value>
   </data>
   <data name="translateXRange.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 31</value>
@@ -244,10 +238,10 @@
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;translateXRange.Parent" xml:space="preserve">
-    <value>Menu</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;translateXRange.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>10</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -256,7 +250,7 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>223, 269</value>
+    <value>221, 368</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>25, 24</value>
@@ -274,13 +268,13 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>Menu</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>12</value>
   </data>
   <data name="rotateZRange.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 267</value>
+    <value>246, 366</value>
   </data>
   <data name="rotateZRange.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 31</value>
@@ -295,10 +289,10 @@
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;rotateZRange.Parent" xml:space="preserve">
-    <value>Menu</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;rotateZRange.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>14</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -307,7 +301,7 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 269</value>
+    <value>131, 368</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 24</value>
@@ -325,13 +319,13 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>Menu</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>16</value>
   </data>
   <data name="rotateYRange.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 267</value>
+    <value>156, 366</value>
   </data>
   <data name="rotateYRange.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 31</value>
@@ -346,16 +340,16 @@
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;rotateYRange.Parent" xml:space="preserve">
-    <value>Menu</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;rotateYRange.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>18</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 269</value>
+    <value>36, 368</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>25, 24</value>
@@ -373,13 +367,13 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>Menu</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>17</value>
   </data>
   <data name="rotateXRange.Location" type="System.Drawing.Point, System.Drawing">
-    <value>63, 267</value>
+    <value>61, 366</value>
   </data>
   <data name="rotateXRange.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 31</value>
@@ -394,10 +388,10 @@
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;rotateXRange.Parent" xml:space="preserve">
-    <value>Menu</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;rotateXRange.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>15</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -406,7 +400,7 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 327</value>
+    <value>36, 426</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 24</value>
@@ -424,16 +418,16 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>Menu</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 236</value>
+    <value>36, 335</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 24</value>
@@ -451,10 +445,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>Menu</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>11</value>
   </data>
   <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -466,7 +460,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 104</value>
+    <value>33, 183</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 24</value>
@@ -484,16 +478,16 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>Menu</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>9</value>
   </data>
   <data name="rndColorButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="rndColorButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 168</value>
+    <value>30, 247</value>
   </data>
   <data name="rndColorButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>266, 32</value>
@@ -511,10 +505,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;rndColorButton.Parent" xml:space="preserve">
-    <value>Menu</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;rndColorButton.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>7</value>
   </data>
   <data name="colorButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -526,7 +520,7 @@
     <value>NoControl</value>
   </data>
   <data name="colorButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 133</value>
+    <value>33, 212</value>
   </data>
   <data name="colorButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>264, 29</value>
@@ -541,10 +535,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;colorButton.Parent" xml:space="preserve">
-    <value>Menu</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;colorButton.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>5</value>
   </data>
   <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -553,7 +547,7 @@
     <value>True</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 8</value>
+    <value>36, 62</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 24</value>
@@ -571,10 +565,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>Menu</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>1</value>
   </data>
   <data name="typeBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -610,7 +604,7 @@
     <value>GL_POLYGON</value>
   </data>
   <data name="typeBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 40</value>
+    <value>36, 94</value>
   </data>
   <data name="typeBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>264, 32</value>
@@ -625,28 +619,628 @@
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;typeBox.Parent" xml:space="preserve">
-    <value>Menu</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;typeBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="colorDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="Menu.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Right</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 33</value>
+  </data>
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 620</value>
+  </data>
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label19.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label19.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Comic Sans MS, 9pt</value>
+  </data>
+  <data name="label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 502</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 20</value>
+  </data>
+  <data name="label19.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>Destination factor:</value>
+  </data>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dFactorBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="dFactorBox.Items" xml:space="preserve">
+    <value>GL_ZERO</value>
+  </data>
+  <data name="dFactorBox.Items1" xml:space="preserve">
+    <value>GL_ONE</value>
+  </data>
+  <data name="dFactorBox.Items2" xml:space="preserve">
+    <value>GL_SRC_COLOR</value>
+  </data>
+  <data name="dFactorBox.Items3" xml:space="preserve">
+    <value>GL_ONE_MINUS_SRC_COLOR</value>
+  </data>
+  <data name="dFactorBox.Items4" xml:space="preserve">
+    <value>GL_SRC_ALPHA</value>
+  </data>
+  <data name="dFactorBox.Items5" xml:space="preserve">
+    <value>GL_ONE_MINUS_SRC_ALPHA</value>
+  </data>
+  <data name="dFactorBox.Items6" xml:space="preserve">
+    <value>GL_DST_ALPHA</value>
+  </data>
+  <data name="dFactorBox.Items7" xml:space="preserve">
+    <value>GL_ONE_MINUS_DST_ALPHA</value>
+  </data>
+  <data name="dFactorBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 525</value>
+  </data>
+  <data name="dFactorBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 32</value>
+  </data>
+  <data name="dFactorBox.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;dFactorBox.Name" xml:space="preserve">
+    <value>dFactorBox</value>
+  </data>
+  <data name="&gt;&gt;dFactorBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dFactorBox.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;dFactorBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label18.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label18.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Comic Sans MS, 9pt</value>
+  </data>
+  <data name="label18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 435</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 20</value>
+  </data>
+  <data name="label18.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>Source factor:</value>
+  </data>
+  <data name="&gt;&gt;label18.Name" xml:space="preserve">
+    <value>label18</value>
+  </data>
+  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="sFactorBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="sFactorBox.Items" xml:space="preserve">
+    <value>GL_ZERO</value>
+  </data>
+  <data name="sFactorBox.Items1" xml:space="preserve">
+    <value>GL_ONE</value>
+  </data>
+  <data name="sFactorBox.Items2" xml:space="preserve">
+    <value>GL_SRC_ALPHA</value>
+  </data>
+  <data name="sFactorBox.Items3" xml:space="preserve">
+    <value>GL_ONE_MINUS_SRC_ALPHA</value>
+  </data>
+  <data name="sFactorBox.Items4" xml:space="preserve">
+    <value>GL_DST_ALPHA</value>
+  </data>
+  <data name="sFactorBox.Items5" xml:space="preserve">
+    <value>GL_ONE_MINUS_DST_ALPHA</value>
+  </data>
+  <data name="sFactorBox.Items6" xml:space="preserve">
+    <value>GL_DST_COLOR</value>
+  </data>
+  <data name="sFactorBox.Items7" xml:space="preserve">
+    <value>GL_ONE_MINUS_DST_COLOR</value>
+  </data>
+  <data name="sFactorBox.Items8" xml:space="preserve">
+    <value>GL_SRC_ALPHA_SATURATE</value>
+  </data>
+  <data name="sFactorBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 458</value>
+  </data>
+  <data name="sFactorBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 32</value>
+  </data>
+  <data name="sFactorBox.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;sFactorBox.Name" xml:space="preserve">
+    <value>sFactorBox</value>
+  </data>
+  <data name="&gt;&gt;sFactorBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sFactorBox.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;sFactorBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label17.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 401</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 24</value>
+  </data>
+  <data name="label17.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>Blend Test</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="scissorWRange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 300</value>
+  </data>
+  <data name="scissorWRange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 31</value>
+  </data>
+  <data name="scissorWRange.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="Menu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>873, 15</value>
+  <data name="&gt;&gt;scissorWRange.Name" xml:space="preserve">
+    <value>scissorWRange</value>
   </data>
-  <data name="Menu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="&gt;&gt;scissorWRange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;scissorWRange.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;scissorWRange.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 302</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>h:</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 302</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 24</value>
+  </data>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>w:</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="scissorHRange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 300</value>
+  </data>
+  <data name="scissorHRange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 31</value>
+  </data>
+  <data name="scissorHRange.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;scissorHRange.Name" xml:space="preserve">
+    <value>scissorHRange</value>
+  </data>
+  <data name="&gt;&gt;scissorHRange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;scissorHRange.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;scissorHRange.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="scissorXRange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 263</value>
+  </data>
+  <data name="scissorXRange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 31</value>
+  </data>
+  <data name="scissorXRange.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;scissorXRange.Name" xml:space="preserve">
+    <value>scissorXRange</value>
+  </data>
+  <data name="&gt;&gt;scissorXRange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;scissorXRange.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;scissorXRange.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 265</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>y:</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 265</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 24</value>
+  </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>x:</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="scissorYRange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 263</value>
+  </data>
+  <data name="scissorYRange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 31</value>
+  </data>
+  <data name="scissorYRange.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;scissorYRange.Name" xml:space="preserve">
+    <value>scissorYRange</value>
+  </data>
+  <data name="&gt;&gt;scissorYRange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;scissorYRange.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;scissorYRange.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label12.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 223</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 24</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Scissor Test</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="alphaRefTrackBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 119</value>
+  </data>
+  <data name="alphaRefTrackBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 56</value>
+  </data>
+  <data name="alphaRefTrackBar.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;alphaRefTrackBar.Name" xml:space="preserve">
+    <value>alphaRefTrackBar</value>
+  </data>
+  <data name="&gt;&gt;alphaRefTrackBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;alphaRefTrackBar.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;alphaRefTrackBar.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label11.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 47</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 24</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Alpha Test</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="alphaTestBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="alphaTestBox.Items" xml:space="preserve">
+    <value>GL_NEVER</value>
+  </data>
+  <data name="alphaTestBox.Items1" xml:space="preserve">
+    <value>GL_LESS</value>
+  </data>
+  <data name="alphaTestBox.Items2" xml:space="preserve">
+    <value>GL_EQUAL</value>
+  </data>
+  <data name="alphaTestBox.Items3" xml:space="preserve">
+    <value>GL_LEQUAL</value>
+  </data>
+  <data name="alphaTestBox.Items4" xml:space="preserve">
+    <value>GL_GREATER</value>
+  </data>
+  <data name="alphaTestBox.Items5" xml:space="preserve">
+    <value>GL_NOTEQUAL</value>
+  </data>
+  <data name="alphaTestBox.Items6" xml:space="preserve">
+    <value>GL_GEQUAL</value>
+  </data>
+  <data name="alphaTestBox.Items7" xml:space="preserve">
+    <value>GL_ALWAYS</value>
+  </data>
+  <data name="alphaTestBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 79</value>
+  </data>
+  <data name="alphaTestBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 32</value>
+  </data>
+  <data name="alphaTestBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;alphaTestBox.Name" xml:space="preserve">
+    <value>alphaTestBox</value>
+  </data>
+  <data name="&gt;&gt;alphaTestBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;alphaTestBox.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;alphaTestBox.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 33</value>
+  </data>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 620</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Tests</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Menu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>874, 15</value>
   </data>
   <data name="Menu.Size" type="System.Drawing.Size, System.Drawing">
     <value>340, 657</value>
   </data>
   <data name="Menu.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;Menu.Name" xml:space="preserve">
     <value>Menu</value>
   </data>
   <data name="&gt;&gt;Menu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Menu.Parent" xml:space="preserve">
     <value>$this</value>
@@ -654,9 +1248,6 @@
   <data name="&gt;&gt;Menu.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="colorDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

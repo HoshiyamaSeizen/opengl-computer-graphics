@@ -31,7 +31,6 @@ namespace ComputerGraphics
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.openGLPanel = new SharpGL.OpenGLControl();
-            this.Menu = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.translateZRange = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
@@ -52,14 +51,41 @@ namespace ComputerGraphics
             this.label1 = new System.Windows.Forms.Label();
             this.typeBox = new System.Windows.Forms.ComboBox();
             this.colorDialog = new System.Windows.Forms.ColorDialog();
+            this.Menu = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label19 = new System.Windows.Forms.Label();
+            this.dFactorBox = new System.Windows.Forms.ComboBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.sFactorBox = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.scissorWRange = new System.Windows.Forms.NumericUpDown();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.scissorHRange = new System.Windows.Forms.NumericUpDown();
+            this.scissorXRange = new System.Windows.Forms.NumericUpDown();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.scissorYRange = new System.Windows.Forms.NumericUpDown();
+            this.label12 = new System.Windows.Forms.Label();
+            this.alphaRefTrackBar = new System.Windows.Forms.TrackBar();
+            this.label11 = new System.Windows.Forms.Label();
+            this.alphaTestBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.openGLPanel)).BeginInit();
-            this.Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.translateZRange)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.translateYRange)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.translateXRange)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rotateZRange)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rotateYRange)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rotateXRange)).BeginInit();
+            this.Menu.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.scissorWRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scissorHRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scissorXRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scissorYRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.alphaRefTrackBar)).BeginInit();
             this.SuspendLayout();
             // 
             // openGLPanel
@@ -73,32 +99,6 @@ namespace ComputerGraphics
             this.openGLPanel.RenderContextType = SharpGL.RenderContextType.DIBSection;
             this.openGLPanel.RenderTrigger = SharpGL.RenderTrigger.TimerBased;
             this.openGLPanel.OpenGLDraw += new SharpGL.RenderEventHandler(this.OpenGLPanel_OpenGLDraw);
-            // 
-            // Menu
-            // 
-            resources.ApplyResources(this.Menu, "Menu");
-            this.Menu.BackColor = System.Drawing.SystemColors.Info;
-            this.Menu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Menu.Controls.Add(this.label8);
-            this.Menu.Controls.Add(this.translateZRange);
-            this.Menu.Controls.Add(this.label9);
-            this.Menu.Controls.Add(this.translateYRange);
-            this.Menu.Controls.Add(this.label10);
-            this.Menu.Controls.Add(this.translateXRange);
-            this.Menu.Controls.Add(this.label7);
-            this.Menu.Controls.Add(this.rotateZRange);
-            this.Menu.Controls.Add(this.label6);
-            this.Menu.Controls.Add(this.rotateYRange);
-            this.Menu.Controls.Add(this.label5);
-            this.Menu.Controls.Add(this.rotateXRange);
-            this.Menu.Controls.Add(this.label4);
-            this.Menu.Controls.Add(this.label3);
-            this.Menu.Controls.Add(this.label2);
-            this.Menu.Controls.Add(this.rndColorButton);
-            this.Menu.Controls.Add(this.colorButton);
-            this.Menu.Controls.Add(this.label1);
-            this.Menu.Controls.Add(this.typeBox);
-            this.Menu.Name = "Menu";
             // 
             // label8
             // 
@@ -279,6 +279,224 @@ namespace ComputerGraphics
             this.typeBox.Name = "typeBox";
             this.typeBox.SelectedIndexChanged += new System.EventHandler(this.TypeBox_SelectedIndexChanged);
             // 
+            // Menu
+            // 
+            resources.ApplyResources(this.Menu, "Menu");
+            this.Menu.Controls.Add(this.tabPage1);
+            this.Menu.Controls.Add(this.tabPage2);
+            this.Menu.Name = "Menu";
+            this.Menu.SelectedIndex = 0;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.SystemColors.Info;
+            this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage1.Controls.Add(this.label8);
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.translateZRange);
+            this.tabPage1.Controls.Add(this.typeBox);
+            this.tabPage1.Controls.Add(this.label9);
+            this.tabPage1.Controls.Add(this.colorButton);
+            this.tabPage1.Controls.Add(this.translateYRange);
+            this.tabPage1.Controls.Add(this.rndColorButton);
+            this.tabPage1.Controls.Add(this.label10);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.translateXRange);
+            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.label7);
+            this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Controls.Add(this.rotateZRange);
+            this.tabPage1.Controls.Add(this.rotateXRange);
+            this.tabPage1.Controls.Add(this.label6);
+            this.tabPage1.Controls.Add(this.label5);
+            this.tabPage1.Controls.Add(this.rotateYRange);
+            resources.ApplyResources(this.tabPage1, "tabPage1");
+            this.tabPage1.Name = "tabPage1";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.SystemColors.Info;
+            this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage2.Controls.Add(this.label19);
+            this.tabPage2.Controls.Add(this.dFactorBox);
+            this.tabPage2.Controls.Add(this.label18);
+            this.tabPage2.Controls.Add(this.sFactorBox);
+            this.tabPage2.Controls.Add(this.label17);
+            this.tabPage2.Controls.Add(this.scissorWRange);
+            this.tabPage2.Controls.Add(this.label13);
+            this.tabPage2.Controls.Add(this.label16);
+            this.tabPage2.Controls.Add(this.scissorHRange);
+            this.tabPage2.Controls.Add(this.scissorXRange);
+            this.tabPage2.Controls.Add(this.label14);
+            this.tabPage2.Controls.Add(this.label15);
+            this.tabPage2.Controls.Add(this.scissorYRange);
+            this.tabPage2.Controls.Add(this.label12);
+            this.tabPage2.Controls.Add(this.alphaRefTrackBar);
+            this.tabPage2.Controls.Add(this.label11);
+            this.tabPage2.Controls.Add(this.alphaTestBox);
+            resources.ApplyResources(this.tabPage2, "tabPage2");
+            this.tabPage2.Name = "tabPage2";
+            // 
+            // label19
+            // 
+            resources.ApplyResources(this.label19, "label19");
+            this.label19.Name = "label19";
+            // 
+            // dFactorBox
+            // 
+            resources.ApplyResources(this.dFactorBox, "dFactorBox");
+            this.dFactorBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.dFactorBox.FormattingEnabled = true;
+            this.dFactorBox.Items.AddRange(new object[] {
+            resources.GetString("dFactorBox.Items"),
+            resources.GetString("dFactorBox.Items1"),
+            resources.GetString("dFactorBox.Items2"),
+            resources.GetString("dFactorBox.Items3"),
+            resources.GetString("dFactorBox.Items4"),
+            resources.GetString("dFactorBox.Items5"),
+            resources.GetString("dFactorBox.Items6"),
+            resources.GetString("dFactorBox.Items7")});
+            this.dFactorBox.Name = "dFactorBox";
+            this.dFactorBox.SelectedIndexChanged += new System.EventHandler(this.dFactorBox_SelectedIndexChanged);
+            // 
+            // label18
+            // 
+            resources.ApplyResources(this.label18, "label18");
+            this.label18.Name = "label18";
+            // 
+            // sFactorBox
+            // 
+            resources.ApplyResources(this.sFactorBox, "sFactorBox");
+            this.sFactorBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sFactorBox.FormattingEnabled = true;
+            this.sFactorBox.Items.AddRange(new object[] {
+            resources.GetString("sFactorBox.Items"),
+            resources.GetString("sFactorBox.Items1"),
+            resources.GetString("sFactorBox.Items2"),
+            resources.GetString("sFactorBox.Items3"),
+            resources.GetString("sFactorBox.Items4"),
+            resources.GetString("sFactorBox.Items5"),
+            resources.GetString("sFactorBox.Items6"),
+            resources.GetString("sFactorBox.Items7"),
+            resources.GetString("sFactorBox.Items8")});
+            this.sFactorBox.Name = "sFactorBox";
+            this.sFactorBox.SelectedIndexChanged += new System.EventHandler(this.sFactorBox_SelectedIndexChanged);
+            // 
+            // label17
+            // 
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.Name = "label17";
+            // 
+            // scissorWRange
+            // 
+            resources.ApplyResources(this.scissorWRange, "scissorWRange");
+            this.scissorWRange.Maximum = new decimal(new int[] {
+            852,
+            0,
+            0,
+            0});
+            this.scissorWRange.Name = "scissorWRange";
+            this.scissorWRange.Value = new decimal(new int[] {
+            852,
+            0,
+            0,
+            0});
+            this.scissorWRange.ValueChanged += new System.EventHandler(this.scissorWRange_ValueChanged);
+            // 
+            // label13
+            // 
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.Name = "label13";
+            // 
+            // label16
+            // 
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.Name = "label16";
+            // 
+            // scissorHRange
+            // 
+            resources.ApplyResources(this.scissorHRange, "scissorHRange");
+            this.scissorHRange.Maximum = new decimal(new int[] {
+            657,
+            0,
+            0,
+            0});
+            this.scissorHRange.Name = "scissorHRange";
+            this.scissorHRange.Value = new decimal(new int[] {
+            657,
+            0,
+            0,
+            0});
+            this.scissorHRange.ValueChanged += new System.EventHandler(this.scissorHRange_ValueChanged);
+            // 
+            // scissorXRange
+            // 
+            resources.ApplyResources(this.scissorXRange, "scissorXRange");
+            this.scissorXRange.Maximum = new decimal(new int[] {
+            600,
+            0,
+            0,
+            0});
+            this.scissorXRange.Name = "scissorXRange";
+            this.scissorXRange.ValueChanged += new System.EventHandler(this.scissorXRange_ValueChanged);
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.Name = "label14";
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.Name = "label15";
+            // 
+            // scissorYRange
+            // 
+            resources.ApplyResources(this.scissorYRange, "scissorYRange");
+            this.scissorYRange.Maximum = new decimal(new int[] {
+            600,
+            0,
+            0,
+            0});
+            this.scissorYRange.Name = "scissorYRange";
+            this.scissorYRange.ValueChanged += new System.EventHandler(this.scissorYRange_ValueChanged);
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
+            // 
+            // alphaRefTrackBar
+            // 
+            resources.ApplyResources(this.alphaRefTrackBar, "alphaRefTrackBar");
+            this.alphaRefTrackBar.Maximum = 100;
+            this.alphaRefTrackBar.Name = "alphaRefTrackBar";
+            this.alphaRefTrackBar.TickFrequency = 10;
+            this.alphaRefTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.alphaRefTrackBar.Scroll += new System.EventHandler(this.alphaRefTrackBar_Scroll);
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
+            // alphaTestBox
+            // 
+            resources.ApplyResources(this.alphaTestBox, "alphaTestBox");
+            this.alphaTestBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.alphaTestBox.FormattingEnabled = true;
+            this.alphaTestBox.Items.AddRange(new object[] {
+            resources.GetString("alphaTestBox.Items"),
+            resources.GetString("alphaTestBox.Items1"),
+            resources.GetString("alphaTestBox.Items2"),
+            resources.GetString("alphaTestBox.Items3"),
+            resources.GetString("alphaTestBox.Items4"),
+            resources.GetString("alphaTestBox.Items5"),
+            resources.GetString("alphaTestBox.Items6"),
+            resources.GetString("alphaTestBox.Items7")});
+            this.alphaTestBox.Name = "alphaTestBox";
+            this.alphaTestBox.SelectedIndexChanged += new System.EventHandler(this.alphaTestBox_SelectedIndexChanged);
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -287,15 +505,24 @@ namespace ComputerGraphics
             this.Controls.Add(this.openGLPanel);
             this.Name = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.SizeChanged += new System.EventHandler(this.MainForm_SizeChanged);
             ((System.ComponentModel.ISupportInitialize)(this.openGLPanel)).EndInit();
-            this.Menu.ResumeLayout(false);
-            this.Menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.translateZRange)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.translateYRange)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.translateXRange)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rotateZRange)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rotateYRange)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rotateXRange)).EndInit();
+            this.Menu.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.scissorWRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scissorHRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scissorXRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scissorYRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.alphaRefTrackBar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,7 +530,6 @@ namespace ComputerGraphics
 
         #endregion
         private SharpGL.OpenGLControl openGLPanel;
-        private System.Windows.Forms.Panel Menu;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox typeBox;
         private System.Windows.Forms.ColorDialog colorDialog;
@@ -324,6 +550,26 @@ namespace ComputerGraphics
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.NumericUpDown rotateYRange;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TabControl Menu;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.NumericUpDown scissorXRange;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.NumericUpDown scissorYRange;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TrackBar alphaRefTrackBar;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox alphaTestBox;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.ComboBox dFactorBox;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.ComboBox sFactorBox;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.NumericUpDown scissorWRange;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.NumericUpDown scissorHRange;
     }
 }
 
