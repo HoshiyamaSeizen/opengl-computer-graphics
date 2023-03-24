@@ -53,6 +53,13 @@ namespace ComputerGraphics
             this.colorDialog = new System.Windows.Forms.ColorDialog();
             this.Menu = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label24 = new System.Windows.Forms.Label();
+            this.scaleRange = new System.Windows.Forms.NumericUpDown();
+            this.label21 = new System.Windows.Forms.Label();
+            this.cameraYRange = new System.Windows.Forms.NumericUpDown();
+            this.label22 = new System.Windows.Forms.Label();
+            this.cameraXRange = new System.Windows.Forms.NumericUpDown();
+            this.label23 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label19 = new System.Windows.Forms.Label();
             this.dFactorBox = new System.Windows.Forms.ComboBox();
@@ -71,6 +78,20 @@ namespace ComputerGraphics
             this.alphaRefTrackBar = new System.Windows.Forms.TrackBar();
             this.label11 = new System.Windows.Forms.Label();
             this.alphaTestBox = new System.Windows.Forms.ComboBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.circlePartRange = new System.Windows.Forms.NumericUpDown();
+            this.label28 = new System.Windows.Forms.Label();
+            this.densityChangeRange = new System.Windows.Forms.NumericUpDown();
+            this.label27 = new System.Windows.Forms.Label();
+            this.densityRange = new System.Windows.Forms.NumericUpDown();
+            this.label26 = new System.Windows.Forms.Label();
+            this.reductionFactorRange = new System.Windows.Forms.NumericUpDown();
+            this.label25 = new System.Windows.Forms.Label();
+            this.iterationRange = new System.Windows.Forms.NumericUpDown();
+            this.label20 = new System.Windows.Forms.Label();
+            this.fractalCheckBox = new System.Windows.Forms.CheckBox();
+            this.xScaleFactorRange = new System.Windows.Forms.NumericUpDown();
+            this.label29 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.openGLPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.translateZRange)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.translateYRange)).BeginInit();
@@ -80,12 +101,22 @@ namespace ComputerGraphics
             ((System.ComponentModel.ISupportInitialize)(this.rotateXRange)).BeginInit();
             this.Menu.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.scaleRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cameraYRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cameraXRange)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.scissorWRange)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.scissorHRange)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.scissorXRange)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.scissorYRange)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.alphaRefTrackBar)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circlePartRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.densityChangeRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.densityRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reductionFactorRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iterationRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xScaleFactorRange)).BeginInit();
             this.SuspendLayout();
             // 
             // openGLPanel
@@ -284,6 +315,7 @@ namespace ComputerGraphics
             resources.ApplyResources(this.Menu, "Menu");
             this.Menu.Controls.Add(this.tabPage1);
             this.Menu.Controls.Add(this.tabPage2);
+            this.Menu.Controls.Add(this.tabPage3);
             this.Menu.Name = "Menu";
             this.Menu.SelectedIndex = 0;
             // 
@@ -291,6 +323,13 @@ namespace ComputerGraphics
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.Info;
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage1.Controls.Add(this.label24);
+            this.tabPage1.Controls.Add(this.scaleRange);
+            this.tabPage1.Controls.Add(this.label21);
+            this.tabPage1.Controls.Add(this.cameraYRange);
+            this.tabPage1.Controls.Add(this.label22);
+            this.tabPage1.Controls.Add(this.cameraXRange);
+            this.tabPage1.Controls.Add(this.label23);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.translateZRange);
@@ -312,6 +351,87 @@ namespace ComputerGraphics
             this.tabPage1.Controls.Add(this.rotateYRange);
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
+            // 
+            // label24
+            // 
+            resources.ApplyResources(this.label24, "label24");
+            this.label24.Name = "label24";
+            // 
+            // scaleRange
+            // 
+            this.scaleRange.DecimalPlaces = 1;
+            this.scaleRange.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            resources.ApplyResources(this.scaleRange, "scaleRange");
+            this.scaleRange.Name = "scaleRange";
+            this.scaleRange.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.scaleRange.ValueChanged += new System.EventHandler(this.scaleRange_ValueChanged);
+            // 
+            // label21
+            // 
+            resources.ApplyResources(this.label21, "label21");
+            this.label21.Name = "label21";
+            // 
+            // cameraYRange
+            // 
+            this.cameraYRange.DecimalPlaces = 1;
+            this.cameraYRange.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            resources.ApplyResources(this.cameraYRange, "cameraYRange");
+            this.cameraYRange.Maximum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            this.cameraYRange.Minimum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            -2147483648});
+            this.cameraYRange.Name = "cameraYRange";
+            this.cameraYRange.ValueChanged += new System.EventHandler(this.cameraYRange_ValueChanged);
+            // 
+            // label22
+            // 
+            resources.ApplyResources(this.label22, "label22");
+            this.label22.Name = "label22";
+            // 
+            // cameraXRange
+            // 
+            this.cameraXRange.DecimalPlaces = 1;
+            this.cameraXRange.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            resources.ApplyResources(this.cameraXRange, "cameraXRange");
+            this.cameraXRange.Maximum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            this.cameraXRange.Minimum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            -2147483648});
+            this.cameraXRange.Name = "cameraXRange";
+            this.cameraXRange.ValueChanged += new System.EventHandler(this.cameraXRange_ValueChanged);
+            // 
+            // label23
+            // 
+            resources.ApplyResources(this.label23, "label23");
+            this.label23.Name = "label23";
             // 
             // tabPage2
             // 
@@ -497,15 +617,229 @@ namespace ComputerGraphics
             this.alphaTestBox.Name = "alphaTestBox";
             this.alphaTestBox.SelectedIndexChanged += new System.EventHandler(this.alphaTestBox_SelectedIndexChanged);
             // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.SystemColors.Info;
+            this.tabPage3.Controls.Add(this.xScaleFactorRange);
+            this.tabPage3.Controls.Add(this.label29);
+            this.tabPage3.Controls.Add(this.circlePartRange);
+            this.tabPage3.Controls.Add(this.label28);
+            this.tabPage3.Controls.Add(this.densityChangeRange);
+            this.tabPage3.Controls.Add(this.label27);
+            this.tabPage3.Controls.Add(this.densityRange);
+            this.tabPage3.Controls.Add(this.label26);
+            this.tabPage3.Controls.Add(this.reductionFactorRange);
+            this.tabPage3.Controls.Add(this.label25);
+            this.tabPage3.Controls.Add(this.iterationRange);
+            this.tabPage3.Controls.Add(this.label20);
+            this.tabPage3.Controls.Add(this.fractalCheckBox);
+            resources.ApplyResources(this.tabPage3, "tabPage3");
+            this.tabPage3.Name = "tabPage3";
+            // 
+            // circlePartRange
+            // 
+            this.circlePartRange.DecimalPlaces = 1;
+            this.circlePartRange.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            resources.ApplyResources(this.circlePartRange, "circlePartRange");
+            this.circlePartRange.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.circlePartRange.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            65536});
+            this.circlePartRange.Name = "circlePartRange";
+            this.circlePartRange.Value = new decimal(new int[] {
+            6,
+            0,
+            0,
+            65536});
+            this.circlePartRange.ValueChanged += new System.EventHandler(this.circlePartRange_ValueChanged);
+            // 
+            // label28
+            // 
+            resources.ApplyResources(this.label28, "label28");
+            this.label28.Name = "label28";
+            // 
+            // densityChangeRange
+            // 
+            this.densityChangeRange.DecimalPlaces = 2;
+            this.densityChangeRange.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            131072});
+            resources.ApplyResources(this.densityChangeRange, "densityChangeRange");
+            this.densityChangeRange.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            65536});
+            this.densityChangeRange.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.densityChangeRange.Name = "densityChangeRange";
+            this.densityChangeRange.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            65536});
+            this.densityChangeRange.ValueChanged += new System.EventHandler(this.densityChangeRange_ValueChanged);
+            // 
+            // label27
+            // 
+            resources.ApplyResources(this.label27, "label27");
+            this.label27.Name = "label27";
+            // 
+            // densityRange
+            // 
+            this.densityRange.DecimalPlaces = 2;
+            this.densityRange.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            131072});
+            resources.ApplyResources(this.densityRange, "densityRange");
+            this.densityRange.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            65536});
+            this.densityRange.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.densityRange.Name = "densityRange";
+            this.densityRange.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.densityRange.ValueChanged += new System.EventHandler(this.densityRange_ValueChanged);
+            // 
+            // label26
+            // 
+            resources.ApplyResources(this.label26, "label26");
+            this.label26.Name = "label26";
+            // 
+            // reductionFactorRange
+            // 
+            this.reductionFactorRange.DecimalPlaces = 1;
+            this.reductionFactorRange.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            resources.ApplyResources(this.reductionFactorRange, "reductionFactorRange");
+            this.reductionFactorRange.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.reductionFactorRange.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.reductionFactorRange.Name = "reductionFactorRange";
+            this.reductionFactorRange.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            65536});
+            this.reductionFactorRange.ValueChanged += new System.EventHandler(this.reductionFactorRange_ValueChanged);
+            // 
+            // label25
+            // 
+            resources.ApplyResources(this.label25, "label25");
+            this.label25.Name = "label25";
+            // 
+            // iterationRange
+            // 
+            resources.ApplyResources(this.iterationRange, "iterationRange");
+            this.iterationRange.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.iterationRange.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.iterationRange.Name = "iterationRange";
+            this.iterationRange.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.iterationRange.ValueChanged += new System.EventHandler(this.iterationRange_ValueChanged);
+            // 
+            // label20
+            // 
+            resources.ApplyResources(this.label20, "label20");
+            this.label20.Name = "label20";
+            // 
+            // fractalCheckBox
+            // 
+            resources.ApplyResources(this.fractalCheckBox, "fractalCheckBox");
+            this.fractalCheckBox.Name = "fractalCheckBox";
+            this.fractalCheckBox.UseVisualStyleBackColor = true;
+            this.fractalCheckBox.CheckedChanged += new System.EventHandler(this.fractalCheckBox_CheckedChanged);
+            // 
+            // xScaleFactorRange
+            // 
+            this.xScaleFactorRange.DecimalPlaces = 2;
+            this.xScaleFactorRange.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            131072});
+            resources.ApplyResources(this.xScaleFactorRange, "xScaleFactorRange");
+            this.xScaleFactorRange.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.xScaleFactorRange.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.xScaleFactorRange.Name = "xScaleFactorRange";
+            this.xScaleFactorRange.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            65536});
+            this.xScaleFactorRange.ValueChanged += new System.EventHandler(this.xScaleFactorRange_ValueChanged);
+            // 
+            // label29
+            // 
+            resources.ApplyResources(this.label29, "label29");
+            this.label29.Name = "label29";
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.Menu);
             this.Controls.Add(this.openGLPanel);
+            this.KeyPreview = true;
             this.Name = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.SizeChanged += new System.EventHandler(this.MainForm_SizeChanged);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.openGLPanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.translateZRange)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.translateYRange)).EndInit();
@@ -516,6 +850,9 @@ namespace ComputerGraphics
             this.Menu.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.scaleRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cameraYRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cameraXRange)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.scissorWRange)).EndInit();
@@ -523,6 +860,14 @@ namespace ComputerGraphics
             ((System.ComponentModel.ISupportInitialize)(this.scissorXRange)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.scissorYRange)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.alphaRefTrackBar)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circlePartRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.densityChangeRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.densityRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reductionFactorRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iterationRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xScaleFactorRange)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -570,6 +915,27 @@ namespace ComputerGraphics
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.NumericUpDown scissorHRange;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.NumericUpDown scaleRange;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.NumericUpDown cameraYRange;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.NumericUpDown cameraXRange;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.CheckBox fractalCheckBox;
+        private System.Windows.Forms.NumericUpDown iterationRange;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.NumericUpDown reductionFactorRange;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.NumericUpDown densityRange;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.NumericUpDown densityChangeRange;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.NumericUpDown circlePartRange;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.NumericUpDown xScaleFactorRange;
+        private System.Windows.Forms.Label label29;
     }
 }
 
