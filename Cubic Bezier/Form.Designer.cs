@@ -64,6 +64,22 @@
             densityTrackBar = new TrackBar();
             label18 = new Label();
             fovTrackBar = new TrackBar();
+            attachCheckBox = new CheckBox();
+            label19 = new Label();
+            emissionColorButton = new Button();
+            emissionColorDialog = new ColorDialog();
+            label20 = new Label();
+            attenConstBox = new NumericUpDown();
+            attenLinearBox = new NumericUpDown();
+            attenQuadBox = new NumericUpDown();
+            label21 = new Label();
+            label22 = new Label();
+            label23 = new Label();
+            label24 = new Label();
+            lightAngleTrackBar = new TrackBar();
+            perspectiveCheckBox = new CheckBox();
+            orthoCheckBox = new CheckBox();
+            label25 = new Label();
             ((System.ComponentModel.ISupportInitialize)openglControl3D).BeginInit();
             ((System.ComponentModel.ISupportInitialize)openglControl).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PhiTrackBar).BeginInit();
@@ -74,6 +90,10 @@
             ((System.ComponentModel.ISupportInitialize)ShininessTrackBar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)densityTrackBar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)fovTrackBar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)attenConstBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)attenLinearBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)attenQuadBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)lightAngleTrackBar).BeginInit();
             SuspendLayout();
             // 
             // openglControl3D
@@ -134,7 +154,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(891, 132);
+            label2.Location = new Point(891, 134);
             label2.Name = "label2";
             label2.Size = new Size(67, 20);
             label2.TabIndex = 7;
@@ -143,7 +163,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(884, 184);
+            label3.Location = new Point(884, 186);
             label3.Name = "label3";
             label3.Size = new Size(81, 20);
             label3.TabIndex = 9;
@@ -244,7 +264,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(894, 526);
+            label8.Location = new Point(894, 528);
             label8.Name = "label8";
             label8.Size = new Size(68, 20);
             label8.TabIndex = 20;
@@ -266,7 +286,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(894, 674);
+            label9.Location = new Point(894, 676);
             label9.Name = "label9";
             label9.Size = new Size(68, 20);
             label9.TabIndex = 22;
@@ -288,7 +308,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(894, 826);
+            label10.Location = new Point(894, 828);
             label10.Name = "label10";
             label10.Size = new Size(68, 20);
             label10.TabIndex = 24;
@@ -310,7 +330,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(1260, 130);
+            label11.Location = new Point(1260, 132);
             label11.Name = "label11";
             label11.Size = new Size(72, 20);
             label11.TabIndex = 26;
@@ -335,7 +355,7 @@
             lightColorButton.BackColor = Color.White;
             lightColorButton.FlatStyle = FlatStyle.Flat;
             lightColorButton.ImeMode = ImeMode.NoControl;
-            lightColorButton.Location = new Point(958, 233);
+            lightColorButton.Location = new Point(960, 289);
             lightColorButton.Name = "lightColorButton";
             lightColorButton.Size = new Size(264, 29);
             lightColorButton.TabIndex = 27;
@@ -345,7 +365,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(897, 237);
+            label12.Location = new Point(899, 293);
             label12.Name = "label12";
             label12.Size = new Size(48, 20);
             label12.TabIndex = 28;
@@ -475,7 +495,7 @@
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(1262, 184);
+            label17.Location = new Point(1262, 186);
             label17.Name = "label17";
             label17.Size = new Size(61, 20);
             label17.TabIndex = 41;
@@ -498,7 +518,7 @@
             // label18
             // 
             label18.AutoSize = true;
-            label18.Location = new Point(1276, 674);
+            label18.Location = new Point(1292, 784);
             label18.Name = "label18";
             label18.Size = new Size(39, 20);
             label18.TabIndex = 43;
@@ -507,7 +527,7 @@
             // fovTrackBar
             // 
             fovTrackBar.ImeMode = ImeMode.NoControl;
-            fovTrackBar.Location = new Point(1312, 665);
+            fovTrackBar.Location = new Point(1328, 773);
             fovTrackBar.Maximum = 360;
             fovTrackBar.Name = "fovTrackBar";
             fovTrackBar.Size = new Size(264, 56);
@@ -517,11 +537,176 @@
             fovTrackBar.Value = 60;
             fovTrackBar.ValueChanged += fovTrackBar_ValueChanged;
             // 
+            // attachCheckBox
+            // 
+            attachCheckBox.AutoSize = true;
+            attachCheckBox.Location = new Point(1381, 685);
+            attachCheckBox.Name = "attachCheckBox";
+            attachCheckBox.Size = new Size(179, 24);
+            attachCheckBox.TabIndex = 44;
+            attachCheckBox.Text = "Attach light to camera";
+            attachCheckBox.UseVisualStyleBackColor = true;
+            attachCheckBox.CheckedChanged += attachCheckBox_CheckedChanged;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(1254, 293);
+            label19.Name = "label19";
+            label19.Size = new Size(70, 20);
+            label19.TabIndex = 46;
+            label19.Text = "Emission:";
+            // 
+            // emissionColorButton
+            // 
+            emissionColorButton.BackColor = Color.Black;
+            emissionColorButton.FlatStyle = FlatStyle.Flat;
+            emissionColorButton.ImeMode = ImeMode.NoControl;
+            emissionColorButton.Location = new Point(1328, 289);
+            emissionColorButton.Name = "emissionColorButton";
+            emissionColorButton.Size = new Size(264, 29);
+            emissionColorButton.TabIndex = 45;
+            emissionColorButton.UseVisualStyleBackColor = false;
+            emissionColorButton.Click += emissionColorButton_Click;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(1260, 848);
+            label20.Name = "label20";
+            label20.Size = new Size(90, 20);
+            label20.TabIndex = 48;
+            label20.Text = "Attenuation:";
+            // 
+            // attenConstBox
+            // 
+            attenConstBox.Location = new Point(1368, 844);
+            attenConstBox.Name = "attenConstBox";
+            attenConstBox.Size = new Size(55, 27);
+            attenConstBox.TabIndex = 49;
+            attenConstBox.Value = new decimal(new int[] { 100, 0, 0, 0 });
+            attenConstBox.ValueChanged += attenConstBox_ValueChanged;
+            // 
+            // attenLinearBox
+            // 
+            attenLinearBox.Location = new Point(1451, 844);
+            attenLinearBox.Name = "attenLinearBox";
+            attenLinearBox.Size = new Size(55, 27);
+            attenLinearBox.TabIndex = 50;
+            attenLinearBox.Value = new decimal(new int[] { 10, 0, 0, 0 });
+            attenLinearBox.ValueChanged += attenLinearBox_ValueChanged;
+            // 
+            // attenQuadBox
+            // 
+            attenQuadBox.Location = new Point(1535, 844);
+            attenQuadBox.Name = "attenQuadBox";
+            attenQuadBox.Size = new Size(55, 27);
+            attenQuadBox.TabIndex = 51;
+            attenQuadBox.Value = new decimal(new int[] { 3, 0, 0, 0 });
+            attenQuadBox.ValueChanged += attenQuadBox_ValueChanged;
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Location = new Point(1362, 823);
+            label21.Name = "label21";
+            label21.Size = new Size(65, 20);
+            label21.TabIndex = 52;
+            label21.Text = "constant";
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Location = new Point(1452, 824);
+            label22.Name = "label22";
+            label22.Size = new Size(46, 20);
+            label22.TabIndex = 53;
+            label22.Text = "linear";
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Location = new Point(1526, 824);
+            label23.Name = "label23";
+            label23.Size = new Size(72, 20);
+            label23.TabIndex = 54;
+            label23.Text = "quadratic";
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Location = new Point(881, 238);
+            label24.Name = "label24";
+            label24.Size = new Size(84, 20);
+            label24.TabIndex = 56;
+            label24.Text = "Spot angle:";
+            // 
+            // lightAngleTrackBar
+            // 
+            lightAngleTrackBar.ImeMode = ImeMode.NoControl;
+            lightAngleTrackBar.Location = new Point(958, 227);
+            lightAngleTrackBar.Maximum = 180;
+            lightAngleTrackBar.Name = "lightAngleTrackBar";
+            lightAngleTrackBar.Size = new Size(264, 56);
+            lightAngleTrackBar.TabIndex = 55;
+            lightAngleTrackBar.TickFrequency = 10;
+            lightAngleTrackBar.TickStyle = TickStyle.TopLeft;
+            lightAngleTrackBar.Value = 10;
+            lightAngleTrackBar.ValueChanged += lightAngleTrackBar_ValueChanged;
+            // 
+            // perspectiveCheckBox
+            // 
+            perspectiveCheckBox.AutoSize = true;
+            perspectiveCheckBox.Checked = true;
+            perspectiveCheckBox.CheckState = CheckState.Checked;
+            perspectiveCheckBox.Location = new Point(1354, 736);
+            perspectiveCheckBox.Name = "perspectiveCheckBox";
+            perspectiveCheckBox.Size = new Size(105, 24);
+            perspectiveCheckBox.TabIndex = 57;
+            perspectiveCheckBox.Text = "Perspective";
+            perspectiveCheckBox.UseVisualStyleBackColor = true;
+            perspectiveCheckBox.CheckedChanged += perspectiveCheckBox_CheckedChanged;
+            // 
+            // orthoCheckBox
+            // 
+            orthoCheckBox.AutoSize = true;
+            orthoCheckBox.Location = new Point(1471, 736);
+            orthoCheckBox.Name = "orthoCheckBox";
+            orthoCheckBox.Size = new Size(119, 24);
+            orthoCheckBox.TabIndex = 58;
+            orthoCheckBox.Text = "Orthographic";
+            orthoCheckBox.UseVisualStyleBackColor = true;
+            orthoCheckBox.CheckedChanged += orthoCheckBox_CheckedChanged;
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Location = new Point(1266, 736);
+            label25.Name = "label25";
+            label25.Size = new Size(79, 20);
+            label25.TabIndex = 59;
+            label25.Text = "Projection:";
+            // 
             // Form
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1635, 905);
+            Controls.Add(label25);
+            Controls.Add(orthoCheckBox);
+            Controls.Add(perspectiveCheckBox);
+            Controls.Add(label24);
+            Controls.Add(lightAngleTrackBar);
+            Controls.Add(label23);
+            Controls.Add(label22);
+            Controls.Add(label21);
+            Controls.Add(attenQuadBox);
+            Controls.Add(attenLinearBox);
+            Controls.Add(attenConstBox);
+            Controls.Add(label20);
+            Controls.Add(label19);
+            Controls.Add(emissionColorButton);
+            Controls.Add(attachCheckBox);
             Controls.Add(label18);
             Controls.Add(fovTrackBar);
             Controls.Add(label17);
@@ -581,6 +766,10 @@
             ((System.ComponentModel.ISupportInitialize)ShininessTrackBar).EndInit();
             ((System.ComponentModel.ISupportInitialize)densityTrackBar).EndInit();
             ((System.ComponentModel.ISupportInitialize)fovTrackBar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)attenConstBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)attenLinearBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)attenQuadBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)lightAngleTrackBar).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -627,5 +816,21 @@
         private TrackBar densityTrackBar;
         private Label label18;
         private TrackBar fovTrackBar;
+        private CheckBox attachCheckBox;
+        private Label label19;
+        private Button emissionColorButton;
+        private ColorDialog emissionColorDialog;
+        private Label label20;
+        private NumericUpDown attenConstBox;
+        private NumericUpDown attenLinearBox;
+        private NumericUpDown attenQuadBox;
+        private Label label21;
+        private Label label22;
+        private Label label23;
+        private Label label24;
+        private TrackBar lightAngleTrackBar;
+        private CheckBox perspectiveCheckBox;
+        private CheckBox orthoCheckBox;
+        private Label label25;
     }
 }

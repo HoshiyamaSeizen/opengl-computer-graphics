@@ -1,8 +1,5 @@
 using SharpGL;
 using SharpGL.SceneGraph;
-using SharpGL.SceneGraph.Quadrics;
-using System.Drawing;
-using System.Runtime.InteropServices;
 
 namespace Cubic_Bezier {
     public partial class Form : System.Windows.Forms.Form {
@@ -38,11 +35,13 @@ namespace Cubic_Bezier {
         private float[] angle = { 0, 0, 0 };
         private float[] viewPos = { 0, 0, 0 };
         private float[] lightColor = { 1f, 1f, 1f };
+        private float[] emissionColor = { 0f, 0f, 0f };
         private float[] lightProps = { 0, float.Pi / 2, 2 };
         private float[] lightPos = { 0, 0, 0 };
         private int[] lighting = { 1, 1, 1 };
         private float[] strength = { 0.1f, 0.5f, 0.5f };
         private float[] objColor = { 1f, 0, 1f };
+        private float[] attenuation = { 1f, 0.1f, 0.03f };
         private float shininess = 64;
         private bool animation = false;
         private bool fullscreen = false;
@@ -61,8 +60,11 @@ namespace Cubic_Bezier {
         private bool structure = false;
         private int density = 500;
         private float scale = 1;
+        private float lightAngle = float.Pi / 18;
         private float[] shift = { 0, 0, 0 };
         private bool justSwitched = false;
+        private bool attached = false;
+        private bool isPerspective = true;
         private double fov = 60;
 
         private enum Type { Cube, CubicBezier, Torus, Figure4, Cylinder, Figure6, Figure7 };
@@ -101,6 +103,7 @@ namespace Cubic_Bezier {
             glslVars = new Dictionary<string, int>();
             glslVars["t"] = gl.GetUniformLocation(shaderProgram, "t");
             glslVars["lightColor"] = gl.GetUniformLocation(shaderProgram, "lightColor");
+            glslVars["emissionColor"] = gl.GetUniformLocation(shaderProgram, "emissionColor");
             glslVars["lightPos"] = gl.GetUniformLocation(shaderProgram, "lightPos");
             glslVars["viewPos"] = gl.GetUniformLocation(shaderProgram, "viewPos");
             glslVars["isAmbient"] = gl.GetUniformLocation(shaderProgram, "isAmbient");
@@ -113,6 +116,9 @@ namespace Cubic_Bezier {
             glslVars["lightType"] = gl.GetUniformLocation(shaderProgram, "lightType");
             glslVars["shininess"] = gl.GetUniformLocation(shaderProgram, "shininess");
             glslVars["animation"] = gl.GetUniformLocation(shaderProgram, "animation");
+            glslVars["attenuation"] = gl.GetUniformLocation(shaderProgram, "attenuation");
+            glslVars["lightAngle"] = gl.GetUniformLocation(shaderProgram, "lightAngle");
+            glslVars["lightDest"] = gl.GetUniformLocation(shaderProgram, "lightDest");
             glslVars["position"] = 0;
             glslVars["normVector"] = 3;
 
@@ -261,7 +267,9 @@ namespace Cubic_Bezier {
             gl.Viewport(0, 0, openglControl3D.Width, openglControl3D.Height);
             gl.MatrixMode(OpenGL.GL_PROJECTION);
             gl.LoadIdentity();
-            gl.Perspective(fov + (sprint?2:0), (float)openglControl3D.Width / openglControl3D.Height, 0.001, 100);
+            float aspect = (float)openglControl3D.Width / openglControl3D.Height;
+            if(isPerspective) gl.Perspective(fov + (sprint ? 2 : 0), aspect, 0.001, 100);
+            else gl.Ortho(-2 * aspect, 2 * aspect, -2, 2, 0.00001, 100);
             gl.MatrixMode(OpenGL.GL_MODELVIEW);
         }
 
@@ -560,7 +568,7 @@ namespace Cubic_Bezier {
             }
         }
 
-        private void drawRotated(int density_whole, int density_part, float[] pos, float p1, float p2, float p3, 
+        private void drawRotated(int density_whole, int density_part, float[] pos, float p1, float p2, float p3,
                                             Action<float[], float, float, float, int, float[], float[]> calcPart) {
             int density = density_part;
             float[] vertices = new float[(density + 1) * 3];
@@ -644,7 +652,7 @@ namespace Cubic_Bezier {
             gl.LookAt(eye[0], eye[1] + (crouch ? -0.3 : 0), eye[2], center[0], center[1] + (crouch ? -0.3 : 0), center[2], 0, 1, 0);
             Matrix lookAtMatrix = gl.GetModelViewMatrix();
 
-            drawCube(0.02f, lightPos, lightColor);
+            if (!attached) drawCube(0.02f, lightPos, lightColor);
 
             gl.Translate(0, 0, modelOffset);
 
@@ -661,8 +669,13 @@ namespace Cubic_Bezier {
             gl.Uniform1(glslVars["t"], t);
             gl.UniformMatrix4(glslVars["lookAtMatrix"], 1, false, lookAtMatrix.AsRowMajorArrayFloat);
             gl.Uniform3(glslVars["lightColor"], 1, lightColor);
-            gl.Uniform3(glslVars["lightPos"], 1, lightPos);
+            gl.Uniform3(glslVars["emissionColor"], 1, emissionColor);
+            if (attached) gl.Uniform3(glslVars["lightPos"], (float)eye[0], (float)eye[1], (float)eye[2]);
+            else gl.Uniform3(glslVars["lightPos"], 1, lightPos);
+            if (attached) gl.Uniform3(glslVars["lightDest"], (float)center[0], (float)center[1], (float)center[2]);
+            else gl.Uniform3(glslVars["lightDest"], 0, 0, modelOffset);
             gl.Uniform3(glslVars["viewPos"], (float)eye[0], (float)eye[1], (float)eye[2]);
+            gl.Uniform3(glslVars["attenuation"], 1, attenuation);
             gl.Uniform1(glslVars["isAmbient"], lighting[0]);
             gl.Uniform1(glslVars["isDiffuse"], lighting[1]);
             gl.Uniform1(glslVars["isSpecular"], lighting[2]);
@@ -670,6 +683,7 @@ namespace Cubic_Bezier {
             gl.Uniform1(glslVars["diffuseStrength"], strength[1]);
             gl.Uniform1(glslVars["specularStrength"], strength[2]);
             gl.Uniform1(glslVars["shininess"], shininess);
+            gl.Uniform1(glslVars["lightAngle"], lightAngle);
             gl.Uniform1(glslVars["animation"], animation ? 1 : 0);
             gl.Uniform1(glslVars["lightType"], (float)selectedLightType);
 
@@ -876,6 +890,48 @@ namespace Cubic_Bezier {
 
         private void fovTrackBar_ValueChanged(object sender, EventArgs e) {
             fov = fovTrackBar.Value;
+        }
+
+        private void attachCheckBox_CheckedChanged(object sender, EventArgs e) {
+            attached = attachCheckBox.Checked;
+        }
+
+        private void emissionColorButton_Click(object sender, EventArgs e) {
+            if (emissionColorDialog.ShowDialog() == DialogResult.OK) {
+                Color dColor = emissionColorDialog.Color;
+                emissionColorButton.BackColor = dColor;
+                emissionColor[0] = (float)dColor.R / 255;
+                emissionColor[1] = (float)dColor.G / 255;
+                emissionColor[2] = (float)dColor.B / 255;
+            }
+        }
+
+        private void attenConstBox_ValueChanged(object sender, EventArgs e) {
+            attenuation[0] = (float)attenConstBox.Value / 100;
+        }
+
+        private void attenLinearBox_ValueChanged(object sender, EventArgs e) {
+            attenuation[1] = (float)attenLinearBox.Value / 100;
+        }
+
+        private void attenQuadBox_ValueChanged(object sender, EventArgs e) {
+            attenuation[2] = (float)attenQuadBox.Value / 100;
+        }
+
+        private void lightAngleTrackBar_ValueChanged(object sender, EventArgs e) {
+            lightAngle = (float)lightAngleTrackBar.Value / 180 * float.Pi;
+        }
+
+        private void perspectiveCheckBox_CheckedChanged(object sender, EventArgs e) {
+            if (isPerspective == perspectiveCheckBox.Checked) return;
+            isPerspective = perspectiveCheckBox.Checked;
+            orthoCheckBox.Checked = !isPerspective;
+        }
+
+        private void orthoCheckBox_CheckedChanged(object sender, EventArgs e) {
+            if (isPerspective != orthoCheckBox.Checked) return;
+            isPerspective = !orthoCheckBox.Checked;
+            perspectiveCheckBox.Checked = isPerspective;
         }
     }
 }

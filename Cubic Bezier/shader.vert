@@ -8,9 +8,11 @@ uniform bool animation;
 uniform mat4 lookAtMatrix;
 uniform vec3 lightPos;
 uniform vec3 viewPos;
+uniform vec3 lightDest;
 
 varying vec3 lightPos1;
 varying vec3 viewPos1;
+varying vec3 lightDest1;
 varying vec3 objColor;
 varying vec3 fragPos;
 varying vec3 normVectorRotated;
@@ -26,4 +28,5 @@ void main(void) {
 	objColor = gl_Color.rgb;
 	lightPos1 = (lookAtMatrix * vec4(lightPos, 1.0)).xyz;
 	viewPos1 = (lookAtMatrix * vec4(viewPos, 1.0)).xyz;
+	lightDest1 = (lookAtMatrix * vec4(lightDest, 1.0)).xyz;
 }
