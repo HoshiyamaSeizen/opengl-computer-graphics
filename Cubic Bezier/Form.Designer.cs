@@ -752,7 +752,6 @@
             Name = "Form";
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Cubic Bezier";
             KeyDown += Form_KeyDown;
             KeyUp += Form_KeyUp;
             Resize += Form_Resize;

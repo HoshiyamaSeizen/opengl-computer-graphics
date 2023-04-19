@@ -268,7 +268,7 @@ namespace Cubic_Bezier {
             gl.MatrixMode(OpenGL.GL_PROJECTION);
             gl.LoadIdentity();
             float aspect = (float)openglControl3D.Width / openglControl3D.Height;
-            if(isPerspective) gl.Perspective(fov + (sprint ? 2 : 0), aspect, 0.001, 100);
+            if (isPerspective) gl.Perspective(fov + (sprint ? 2 : 0), aspect, 0.001, 100);
             else gl.Ortho(-2 * aspect, 2 * aspect, -2, 2, 0.00001, 100);
             gl.MatrixMode(OpenGL.GL_MODELVIEW);
         }
